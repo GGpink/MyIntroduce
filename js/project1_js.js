@@ -33,12 +33,12 @@ function load(){
 music_div.onclick=function(){
 	
 	if(music_c){
-		music_div.style.backgroundImage="url(project1_project1_project1_img/audio_stop.png)";
+		music_div.style.backgroundImage="url(project1_project1_img/audio_stop.png)";
 		music_div.style.animationPlayState="paused";
 		music.pause();
 		music_c=false;
 	}else{
-		music_div.style.backgroundImage="url(project1_project1_project1_img/audio_play.png)";
+		music_div.style.backgroundImage="url(project1_project1_img/audio_play.png)";
 		music_div.style.animationPlayState="running";
 		music.play();
 		music_c=true;
@@ -53,7 +53,7 @@ function girl(){
 	
 	var ti=setTimeout(function(){
 		
-		p2_girl.src="project1_project1_project1_img/p2_girl.png";
+		p2_girl.src="project1_project1_img/p2_girl.png";
 		p2_girl.style.marginLeft="-18%";
 		
 	},3000)
@@ -98,13 +98,13 @@ for(var i=0;i<_position.length;i++){
 		 for(var j=0;j<_position.length;j++){
 		 	_position[j].clicked=0;
 		 	_position[j].style.textShadow='none';
-		 	_zb[j].src='project1_project1_img/zuobiao1.png';
+		 	_zb[j].src='project1_img/zuobiao1.png';
 		 	_text[j].style.opacity='0';
 		 }
 		 CitySelected=this.aa;
 		 this.clicked=1;
 		 this.style.textShadow='2px 2px 20px gold';
-		 _zb[this.aa].src='project1_project1_img/zuobiao2.png';
+		 _zb[this.aa].src='project1_img/zuobiao2.png';
 		 _text[this.aa].style.opacity='1';
 		 
 	}
