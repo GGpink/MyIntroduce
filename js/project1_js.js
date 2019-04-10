@@ -33,12 +33,12 @@ function load(){
 music_div.onclick=function(){
 	
 	if(music_c){
-		music_div.style.backgroundImage="url(project1_project1_img/audio_stop.png)";
+		music_div.style.backgroundImage="url(project1_img/audio_stop.png)";
 		music_div.style.animationPlayState="paused";
 		music.pause();
 		music_c=false;
 	}else{
-		music_div.style.backgroundImage="url(project1_project1_img/audio_play.png)";
+		music_div.style.backgroundImage="url(project1_img/audio_play.png)";
 		music_div.style.animationPlayState="running";
 		music.play();
 		music_c=true;
@@ -53,7 +53,7 @@ function girl(){
 	
 	var ti=setTimeout(function(){
 		
-		p2_girl.src="project1_project1_img/p2_girl.png";
+		p2_girl.src="project1_img/p2_girl.png";
 		p2_girl.style.marginLeft="-18%";
 		
 	},3000)
