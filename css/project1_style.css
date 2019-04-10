@@ -1,0 +1,808 @@
+﻿/*//////////////////////////////////////////////////////*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.show {
+	width: 23.4375rem;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.page {
+	width: 23.4375rem;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+@keyframes falsh {
+	from {
+		opacity: 0;
+		visibility: hidden;
+	}
+	to {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+
+/*music*/
+
+#music_div {
+	width: 3rem;
+	height: 3rem;
+	position: fixed;
+	background: url(../img/audio_play.png)no-repeat;
+	background-size: 100% 100%;
+	top: 0.1rem;
+	left: calc(50% + 8rem);
+	z-index: 100;
+	/*display: none;*/
+	animation: zhuang 2s linear infinite;
+}
+
+@keyframes zhuang {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*page01*/
+
+.box1 {
+	position: relative;
+	height: 100%;
+	text-align: center;
+}
+
+.box1 img {
+	width: 23.4375rem;
+	position: absolute;
+	left: 0;
+}
+
+.box1 p {
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 1.5rem;
+	position: absolute;
+	top: calc(50% + 5.5rem);
+	left: calc(50% - 5rem);
+}
+
+.box1 span {
+	width: 1.3rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 1.5rem;
+	position: absolute;
+	top: calc(50% + 5rem);
+	left: calc(50% + 5.5rem);
+	overflow: hidden;
+	animation: dian 1s infinite linear;
+}
+
+@keyframes dian {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 1.3rem;
+	}
+}
+
+.box1 h2 {
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 1.5rem;
+	position: absolute;
+	top: calc(50% + 7.3rem);
+	left: calc(50% - 1rem);
+}
+
+
+/*page02*/
+
+.page02 {
+	background: url(../img/p2_bj.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.box2_1 {
+	position: relative;
+}
+
+.box2_1 img {
+	width: 100%;
+	position: absolute;
+}
+
+.box2_2 {
+	margin-top: 40%;
+	margin-left: 8%;
+	animation: falsh 1s ease both;
+	animation-delay: 3.5s;
+}
+
+.box2_2 img {
+	width: 14rem;
+}
+
+.box2_3 {
+	position: absolute;
+	bottom: 2rem;
+	left: calc(50% - 5rem);
+	animation: falsh 1s ease both;
+	animation-delay: 4.5s;
+}
+
+.box2_3 img {
+	width: 10rem;
+	z-index: 100;
+}
+
+
+/*page03*/
+
+.bj1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../img/p3_bj.png)no-repeat;
+	background-size: 100% 100%;
+	z-index: 1;
+	animation: bj_1 2s infinite linear;
+}
+
+@keyframes bj_1 {
+	from {
+		left: 0%;
+	}
+	to {
+		left: -100%;
+	}
+}
+
+@keyframes bj_2 {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.bj2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../img/p3_bj.png)no-repeat;
+	background-size: 100% 100%;
+	z-index: 1;
+	animation: bj_2 2s infinite linear;
+}
+
+.box3_1 {
+	width: 23.4375rem;
+	height: 35%;
+	z-index: 10;
+	position: relative;
+}
+
+.box3_1 video {
+	width: 23.4375rem;
+	height: 100%;
+	position: absolute;
+}
+
+.box3_2 {
+	position: relative;
+	z-index: 10;
+	height: 36.5%;
+}
+
+.p3_text p {
+	height: 1.5rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #43210d;
+	overflow: hidden;
+	margin-top: 0.5rem;
+}
+
+.p3_text p:nth-child(1) {
+	width: 7.5rem;
+	margin-left: calc(50% - 3.75rem);
+	animation: text1 1s ease both;
+	animation-delay: 1s;
+}
+
+.p3_text p:nth-child(2) {
+	width: 10rem;
+	margin-left: calc(50% - 5rem);
+	animation: text2 1s ease both;
+	animation-delay: 2s;
+}
+
+.p3_text p:nth-child(3) {
+	width: 8.5rem;
+	margin-left: calc(50% - 4.25rem);
+	animation: text3 1s ease both;
+	animation-delay: 3s;
+}
+
+.p3_text p:nth-child(4) {
+	width: 11rem;
+	margin-left: calc(50% - 5.5rem);
+	animation: text4 1s ease both;
+	animation-delay: 4s;
+}
+
+.p3_text p:nth-child(5) {
+	width: 16rem;
+	margin-left: calc(50% - 8rem);
+	animation: text5 2s ease both;
+	animation-delay: 5s;
+}
+
+.p3_text p:nth-child(6) {
+	width: 12rem;
+	margin-left: calc(50% - 6rem);
+	animation: text6 1s ease both;
+	animation-delay: 7s;
+}
+
+.p3_text p:nth-child(7) {
+	width: 8.5rem;
+	margin-left: calc(50% - 4.25rem);
+	animation: text7 1s ease both;
+	animation-delay: 8s;
+}
+
+@keyframes text1 {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 7.5rem;
+	}
+}
+
+@keyframes text2 {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 10rem;
+	}
+}
+
+@keyframes text3 {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 8.5rem;
+	}
+}
+
+@keyframes text4 {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 11rem;
+	}
+}
+
+@keyframes text5 {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 16rem;
+	}
+}
+
+@keyframes text6 {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 12rem;
+	}
+}
+
+@keyframes text7 {
+	from {
+		width: 0rem;
+	}
+	to {
+		width: 8.5rem;
+	}
+}
+
+.box3_3 {
+	position: relative;
+	z-index: 10;
+	height: 27%;
+}
+
+.box3_3 img:nth-child(1) {
+	width: 18rem;
+	margin-left: 4%;
+}
+
+.box3_3 img:nth-child(2) {
+	width: 3rem;
+	position: absolute;
+	top: 5.5rem;
+	left: 7.3rem;
+	animation: zhuang 1s infinite linear;
+}
+
+.box3_3 img:nth-child(3) {
+	width: 3rem;
+	position: absolute;
+	top: 5.5rem;
+	left: 15.5rem;
+	animation: zhuang 1s infinite linear;
+}
+
+#arrow {
+	position: absolute;
+	bottom: 0.625rem;
+	left: calc(50% - 1rem);
+	z-index: 10;
+	animation: falsh 1s ease both;
+	animation-delay: 9s;
+}
+
+#arrow img {
+	width: 2rem;
+	animation: tiao 1s infinite linear;
+}
+
+@keyframes tiao {
+	from {
+		transform: translate(0);
+	}
+	to {
+		transform: translateY(10px);
+	}
+}
+
+
+/*///////////////////////////////////////////////////*/
+
+
+/*page04*/
+
+.page04 {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.box4_1 {
+	width: 100%;
+	height: 60%;
+	overflow: hidden;
+}
+
+.map {
+	width: 23rem;
+	position: absolute;
+	top: 5rem;
+	left: calc(50% - 11.5rem);
+}
+
+.position {
+	position: absolute;
+	/*overflow: hidden;*/
+	font-family: '隶书';
+	font-size: 1.5em;
+	font-weight: bold;
+	color: rgba(255, 242, 128);
+	padding: 0;
+}
+
+.position1 {
+	top: 11.2rem;
+	left: 10.5rem;
+	animation: falsh .5s ease both;
+}
+
+.position2 {
+	top: 14.5rem;
+	left: 14.5rem;
+	animation: falsh .5s ease both;
+	animation-delay: .5s;
+}
+
+.position3 {
+	top: 18.5rem;
+	left: 12.2rem;
+	animation: falsh .5s ease both;
+	animation-delay: 1s;
+}
+
+.zb {
+	animation: zb_run 1s linear infinite both alternate;
+}
+
+@keyframes zb_run {
+	from {
+		transform: translateY();
+	}
+	to {
+		transform: translateY(5px);
+	}
+}
+
+.text {
+	width: 8rem;
+	position: absolute;
+	opacity: 0;
+}
+
+.text1 {
+	top: 10rem;
+	left: 2rem;
+}
+
+.text2 {
+	top: 13.5rem;
+	left: 6rem;
+}
+
+.text3 {
+	top: 17.5rem;
+	left: 4rem;
+}
+
+.box4_2 {
+	width: 100%;
+	height: 40%;
+	position: relative;
+}
+
+.box4_2 img:nth-child(1) {
+	width: 9rem;
+	position: absolute;
+	bottom: 7rem;
+	left: 4rem;
+	animation: falsh .5s ease both;
+	;
+	animation-delay: 1.5s;
+}
+
+.box4_2 img:nth-child(2) {
+	width: 13rem;
+	position: absolute;
+	bottom: 11rem;
+	left: 9rem;
+	animation: falsh .5s ease both;
+	animation-delay: 2s;
+}
+
+.box4_2 img:nth-child(3) {
+	width: 12rem;
+	position: absolute;
+	bottom: 1rem;
+	left: calc(50% - 6rem);
+	animation: falsh .5s ease both;
+	animation-delay: 2.5s;
+}
+
+
+/*page05*/
+
+.page05 {
+	background: url(../img/beijing_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.box5_1 {
+	width: 100%;
+	height: 75%;
+	position: relative;
+	overflow: hidden;
+}
+
+.box5_1 img {
+	position: absolute;
+}
+
+.box5_1 img:nth-child(1) {
+	width: 100%;
+	top: 5rem;
+	left: 0rem;
+	animation: cloud_run1 8s infinite linear both;
+}
+
+.box5_1 img:nth-child(2) {
+	width: 100%;
+	top: 5rem;
+	left: -23.4375rem;
+	animation: cloud_run2 8s infinite linear both;
+}
+
+@keyframes cloud_run1 {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes cloud_run2 {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.box5_1 img:nth-child(3) {
+	width: 15rem;
+	top: 10rem;
+	left: 5rem;
+}
+
+.box5_1 img:nth-child(4) {
+	width: 20rem;
+	top: 7rem;
+	left: calc(50% - 10rem);
+}
+
+.box5_1 textarea {
+	width: 16rem;
+	height: 14rem;
+	position: absolute;
+	top: 12rem;
+	left: calc(50% - 8rem);
+	background-color: rgba(92, 95, 134, 0.2);
+	border: none;
+	font-family: '宋体';
+	color: white;
+	font-size: 1.4em;
+}
+
+textarea:active {
+	outline: none;
+	border: none;
+}
+
+.box5_2 {
+	width: 100%;
+	height: 25%;
+	position: relative;
+}
+
+.box5_2 img:nth-child(1) {
+	width: 3rem;
+	position: absolute;
+	bottom: 7rem;
+	left: 10rem;
+}
+
+.box5_2 img:nth-child(2) {
+	width: 12rem;
+	position: absolute;
+	bottom: 2rem;
+	left: calc(50% - 6rem);
+}
+
+
+/*page06*/
+
+.page06 {
+	background: url(../img/shanghai_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.box6_1 {
+	width: 100%;
+	height: 75%;
+	position: relative;
+	overflow: hidden;
+}
+
+.box6_1 img {
+	position: absolute;
+}
+
+.box6_1 img:nth-child(1) {
+	width: 100%;
+	top: 5rem;
+	left: 0rem;
+	animation: cloud_run1 8s infinite linear both;
+}
+
+.box6_1 img:nth-child(2) {
+	width: 100%;
+	top: 5rem;
+	left: -23.4375rem;
+	animation: cloud_run2 8s infinite linear both;
+}
+
+.box6_1 img:nth-child(3) {
+	width: 15rem;
+	top: 10rem;
+	left: 5rem;
+}
+
+.box6_1 img:nth-child(4) {
+	width: 20rem;
+	top: 7rem;
+	left: calc(50% - 10rem);
+	animation: falsh 1s ease both;
+	animation-delay: 5s;
+	;
+}
+
+.box6_1 textarea {
+	width: 16rem;
+	height: 14rem;
+	position: absolute;
+	top: 12rem;
+	left: calc(50% - 8rem);
+	background-color: rgba(92, 95, 134, 0.2);
+	border: none;
+	font-family: '宋体';
+	color: white;
+	font-size: 1.4em;
+	animation: falsh 1s ease both;
+	animation-delay: 5s;
+	;
+}
+
+textarea:active {
+	outline: none;
+	border: none;
+}
+
+.box6_2 {
+	width: 100%;
+	height: 25%;
+	position: relative;
+}
+
+.box6_2 img:nth-child(1) {
+	width: 10rem;
+	position: absolute;
+	bottom: 7rem;
+	left: -10rem;
+	animation: shape_slip 5s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes shape_slip {
+	to {
+		transform: translateX(17rem);
+	}
+}
+
+.box6_2 img:nth-child(2) {
+	width: 12rem;
+	position: absolute;
+	bottom: 2rem;
+	left: calc(50% - 6rem);
+	animation: falsh 1s ease both;
+	animation-delay: 5s;
+	;
+}
+
+
+/*page07*/
+
+.page07 {
+	background: url(../img/guangzhou_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.box7_1 {
+	width: 100%;
+	height: 75%;
+	position: relative;
+	overflow: hidden;
+}
+
+.box7_1 img {
+	position: absolute;
+}
+
+.box7_1 img:nth-child(1) {
+	width: 100%;
+	top: 5rem;
+	left: 0rem;
+	animation: cloud_run1 8s infinite linear both;
+}
+
+.box7_1 img:nth-child(2) {
+	width: 100%;
+	top: 5rem;
+	left: -23.4375rem;
+	animation: cloud_run2 8s infinite linear both;
+}
+
+.box7_1 img:nth-child(3) {
+	width: 15rem;
+	top: 10rem;
+	left: 5rem;
+}
+
+.box7_1 img:nth-child(4) {
+	width: 20rem;
+	top: 7rem;
+	left: calc(50% - 10rem);
+	animation: falsh 1s ease both;
+	animation-delay: 5s;
+	;
+}
+
+.box7_1 textarea {
+	width: 16rem;
+	height: 14rem;
+	position: absolute;
+	top: 12rem;
+	left: calc(50% - 8rem);
+	background-color: rgba(92, 95, 134, 0.2);
+	border: none;
+	font-family: '宋体';
+	color: white;
+	font-size: 1.4em;
+	animation: falsh 1s ease both;
+	animation-delay: 5s;
+	;
+}
+
+textarea:active {
+	outline: none;
+	border: none;
+}
+
+.box7_2 {
+	width: 100%;
+	height: 25%;
+	position: relative;
+}
+
+.box7_2 img:nth-child(1) {
+	width: 5rem;
+	position: absolute;
+	top: -296%;
+	left: -5rem;
+	animation: qiqiu_run 5s ease both;
+}
+
+@keyframes qiqiu_run {
+	to {
+		transform: translateX(6rem);
+	}
+}
+
+.box7_2 img:nth-child(2) {
+	width: 12rem;
+	position: absolute;
+	bottom: 2rem;
+	left: calc(50% - 6rem);
+	animation: falsh 1s ease both;
+	animation-delay: 6s;
+	;
+}
