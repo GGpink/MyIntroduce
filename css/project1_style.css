@@ -48,7 +48,7 @@ body {
 	top: 0.1rem;
 	left: calc(50% + 8rem);
 	z-index: 100;
-	/*display: none;*/
+	display: none;
 	animation: zhuang 2s linear infinite;
 }
 
@@ -78,7 +78,7 @@ body {
 	font-weight: bold;
 	font-size: 1.5rem;
 	position: absolute;
-	top: calc(50% + 5.5rem);
+	top: calc(50% + 7.5rem);
 	left: calc(50% - 5rem);
 }
 
@@ -88,7 +88,7 @@ body {
 	font-weight: bold;
 	font-size: 1.5rem;
 	position: absolute;
-	top: calc(50% + 5rem);
+	top: calc(50% + 7rem);
 	left: calc(50% + 5.5rem);
 	overflow: hidden;
 	animation: dian 1s infinite linear;
@@ -108,7 +108,7 @@ body {
 	font-weight: bold;
 	font-size: 1.5rem;
 	position: absolute;
-	top: calc(50% + 7.3rem);
+	top: calc(50% + 9.3rem);
 	left: calc(50% - 1rem);
 }
 
@@ -215,12 +215,13 @@ body {
 
 .p3_text p {
 	height: 1.5rem;
+	margin-top: 0.1rem;
 	font-family: "微软雅黑";
 	font-weight: bold;
 	font-size: 1.2rem;
 	color: #43210d;
 	overflow: hidden;
-	margin-top: 0.5rem;
+
 }
 
 .p3_text p:nth-child(1) {
@@ -477,34 +478,34 @@ body {
 	width: 100%;
 	height: 40%;
 	position: relative;
+	overflow: hidden;
 }
 
 .box4_2 img:nth-child(1) {
-	width: 9rem;
-	position: absolute;
-	bottom: 7rem;
-	left: 4rem;
-	animation: falsh .5s ease both;
-	;
-	animation-delay: 1.5s;
+    width: 8rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 4rem;
+    animation: falsh .5s ease both;
+    animation-delay: 1.5s;
 }
 
 .box4_2 img:nth-child(2) {
-	width: 13rem;
-	position: absolute;
-	bottom: 11rem;
-	left: 9rem;
-	animation: falsh .5s ease both;
-	animation-delay: 2s;
+    width: 13rem;
+    position: absolute;
+    bottom: 7rem;
+    left: 9rem;
+    animation: falsh .5s ease both;
+    animation-delay: 2s;
 }
 
 .box4_2 img:nth-child(3) {
-	width: 12rem;
-	position: absolute;
-	bottom: 1rem;
-	left: calc(50% - 6rem);
-	animation: falsh .5s ease both;
-	animation-delay: 2.5s;
+    width: 10rem;
+    position: absolute;
+    bottom: 0.2rem;
+    left: calc(50% - 6rem);
+    animation: falsh .5s ease both;
+    animation-delay: 2.5s;
 }
 
 
@@ -566,7 +567,7 @@ body {
 
 .box5_1 img:nth-child(4) {
 	width: 20rem;
-	top: 7rem;
+	top: 3rem;
 	left: calc(50% - 10rem);
 }
 
@@ -574,7 +575,7 @@ body {
 	width: 16rem;
 	height: 14rem;
 	position: absolute;
-	top: 12rem;
+	top: 6.2rem;
 	left: calc(50% - 8rem);
 	background-color: rgba(92, 95, 134, 0.2);
 	border: none;
@@ -597,14 +598,14 @@ textarea:active {
 .box5_2 img:nth-child(1) {
 	width: 3rem;
 	position: absolute;
-	bottom: 7rem;
+	bottom: 6rem;
 	left: 10rem;
 }
 
 .box5_2 img:nth-child(2) {
 	width: 12rem;
 	position: absolute;
-	bottom: 2rem;
+	bottom: 0.5rem;
 	left: calc(50% - 6rem);
 }
 
@@ -649,18 +650,18 @@ textarea:active {
 
 .box6_1 img:nth-child(4) {
 	width: 20rem;
-	top: 7rem;
+	top: 3rem;
 	left: calc(50% - 10rem);
 	animation: falsh 1s ease both;
 	animation-delay: 5s;
-	;
+	
 }
 
 .box6_1 textarea {
 	width: 16rem;
 	height: 14rem;
 	position: absolute;
-	top: 12rem;
+	top: 7.2rem;
 	left: calc(50% - 8rem);
 	background-color: rgba(92, 95, 134, 0.2);
 	border: none;
@@ -686,7 +687,7 @@ textarea:active {
 .box6_2 img:nth-child(1) {
 	width: 10rem;
 	position: absolute;
-	bottom: 7rem;
+	bottom: 5rem;
 	left: -10rem;
 	animation: shape_slip 5s linear;
 	animation-fill-mode: forwards;
@@ -701,7 +702,7 @@ textarea:active {
 .box6_2 img:nth-child(2) {
 	width: 12rem;
 	position: absolute;
-	bottom: 2rem;
+	bottom: 0.5rem;
 	left: calc(50% - 6rem);
 	animation: falsh 1s ease both;
 	animation-delay: 5s;
