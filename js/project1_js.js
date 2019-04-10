@@ -22,6 +22,7 @@ function load(){
 			
 			music_div.style.display="block";
 			music.play();
+		        music.muted=0;
 			girl();
 			clearInterval(tiem);			
 		}
