@@ -8,6 +8,7 @@ var music_c = true;
 
 load();
 
+
 function load() {
 	//android  ios 内部原因 为了节省流量，规定不自动播放音频视频
 	//--创建页面监听，等待微信端页面加载完毕 触发音频播放
@@ -20,7 +21,6 @@ function load() {
 		}
 		audioAutoPlay();
 	});
-
 	//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
 	document.addEventListener('touchstart', function() {
 		function audioAutoPlay() {
@@ -28,7 +28,7 @@ function load() {
 		}
 		audioAutoPlay();
 	});
-
+	
 	//检测音乐加载完成
 	music.addEventListener('canplay',function(){
 		music.canplay = 1;
@@ -42,7 +42,7 @@ function load() {
 
 		if (num >= 100 && music.canplay) {
 
-//             console.log(music.canplay);
+            console.log(music.canplay);
 
 			loadingnum.innerHTML = "100%";
 			pageTop(index);
