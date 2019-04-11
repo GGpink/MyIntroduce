@@ -37,14 +37,15 @@ function load() {
 
 	var tiem = setInterval(function() {
 
-		num += 1;
+		num += 2;
 		loadingnum.innerHTML = num + "%";
 
-		if (num >= 100) {
-			
-		  clearInterval(tiem);
-          if(music.canplay){
-            console.log(music.canplay);
+		if (num >= 60 && !music.canplay) {
+			num -= 1;
+		}
+		if (music.canplay && num>99) {
+			clearInterval(tiem);
+			// console.log(music.canplay);
 
 			loadingnum.innerHTML = "100%";
 			pageTop(index);
@@ -52,12 +53,10 @@ function load() {
 			music_div.style.display = "block";
 
 			girl();
-			
-		  }
-		  
 		}
 
-	}, 80);
+
+	}, 150);
 }
 
 
