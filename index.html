@@ -13,8 +13,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+	<!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
@@ -33,7 +34,7 @@
       <!-- ===== 导航栏 ===== -->
       <div class="row w">
         <div class="col-md-4">
-          <img class="img-responsive" src="img/yasuo.jpg" alt="">
+          <img class="img-responsive" src="img/main.jpg" alt="">
           <ul class="nav nav-tabs nav-stacked" id="myTab">
             <li class="active"><a href="#about">简介</a></li>
             <li><a href="#profile">经历</a></li>
@@ -49,12 +50,12 @@
 
             <!-- ===== 简介 ===== -->
             <div class="tab-pane active" id="about">
-              <h3>TZY</h3>
+              <h3 id="name">谭志源</h3>
               <h5>在校学生</h5>
               <hr>
               <p class="qwe">一个在快要<h1 style="color: red;">毕业</h1>的学生</p>
 							<img src="img/scream.gif" alt="" />
-              <!-- <p>Has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p> -->
+              <p style="margin-right: 50px;">希望能做个前端开发大触 <i class="fas fa-dog fa-sm" > </i></p>
               <p class="pull-right red"><i class="fa fa-heart"></i></p>
             </div>
             <!-- tab about -->
@@ -70,13 +71,20 @@
               <h4><i class="fa fa-file-text-o"></i> 教育</h4>
               <p class="sm">
                 <grey>2016.9~2019.6</grey> | 中山火炬职业技术学院<br/>
+								<!-- 移动互联应用技术 -->
                 <!-- <grey>Business Master</grey> | Loyal Univesrity.<br/> -->
               </p>
 
               <h4><i class="fa fa-trophy"></i> 奖项</h4>
               <p class="sm">
-                <grey>2018年广东省HTML5交互融媒体内容设计与制作高职院校大赛</grey> | 一等奖<br/>
-                <grey>2019年全国HTML5交互融媒体内容设计与制作高职院校大赛</grey> | 一等奖<br/>
+								<div class="award_text"> 
+								   <grey>2019年全国HTML5交互融媒体内容设计与制作高职院校大赛(许昌)</grey> | 一等奖<span class="arrow"></span><br/>
+								</div>
+								<img src="img/award1.jpg" alt=""  class="award_img"/><br/>							
+								<div class="award_text">
+                   <grey>2019年广东省HTML5交互融媒体内容设计与制作高职院校大赛（本校）</grey> | 一等奖<span class="arrow "></span><br/>
+								</div>
+								<img  src="img/award2.png" alt=" "  class="award_img"></img>
               </p>
             </div>
             <!-- Tab Profile -->
@@ -85,7 +93,7 @@
             <div class="tab-pane" id="portfolio">
               <div class="row">
                 <div class="col-xs-6 centered">
-									<a href="project1.html">
+									<a href="index.html" >
                     <img class="img-responsive" src="img/project1.png" alt="">
                     <h6><i class="fa fa-link"></i> 项目1</h6>
 								  </a>
@@ -164,7 +172,7 @@
                 </div>
                 <!-- col-xs-6 -->
               </div>
-              <div>
+              <!-- <div>
                 <h4>Contact Form</h4>
                 <hr>
                 <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
@@ -196,7 +204,7 @@
                   </div>
 
                 </form>
-              </div>
+              </div> -->
               <!-- row -->
             </div>
             <!-- Tab Contact -->
