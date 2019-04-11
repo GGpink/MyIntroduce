@@ -40,8 +40,10 @@ function load() {
 		num += 1;
 		loadingnum.innerHTML = num + "%";
 
-		if (num >= 100 && music.canplay) {
-
+		if (num >= 100) {
+			
+		  clearInterval(tiem);
+          if(music.canplay){
             console.log(music.canplay);
 
 			loadingnum.innerHTML = "100%";
@@ -50,10 +52,12 @@ function load() {
 			music_div.style.display = "block";
 
 			girl();
-			clearInterval(tiem);
+			
+		  }
+		  
 		}
 
-	}, 50)
+	}, 80);
 }
 
 
