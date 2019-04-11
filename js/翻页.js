@@ -28,7 +28,7 @@ document.addEventListener("touchmove",function(e){
 })
 document.addEventListener("touchend",function(e){
 
-	if(Math.abs(dis)>150 && canmove){		
+	if(Math.abs(dis)>30 && canmove){		
 		if(dis>0){
 			pageTop(index);
 			qingling();
