@@ -29,15 +29,20 @@ function load() {
 		audioAutoPlay();
 	});
 
+	//检测音乐加载完成
+	music.addEventListener('canplay',function(){
+		music.canplay = 1;
+	})
+
 
 	var tiem = setInterval(function() {
 
 		num += 1;
 		loadingnum.innerHTML = num + "%";
 
-		if (num >= 100) {
+		if (num >= 100 && music.canplay) {
 
-
+//             console.log(music.canplay);
 
 			loadingnum.innerHTML = "100%";
 			pageTop(index);
@@ -48,7 +53,7 @@ function load() {
 			clearInterval(tiem);
 		}
 
-	}, 20)
+	}, 50)
 }
 
 
