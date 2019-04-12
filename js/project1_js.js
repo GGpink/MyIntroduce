@@ -10,53 +10,53 @@ load();
 
 
 function load() {
-// 	//android  ios 内部原因 为了节省流量，规定不自动播放音频视频
-// 	//--创建页面监听，等待微信端页面加载完毕 触发音频播放
-// 	document.addEventListener('DOMContentLoaded', function() {
-// 		function audioAutoPlay() {
-// 			music.play();
-// 			document.addEventListener("WeixinJSBridgeReady", function() {
-// 				music.play();
-// 			}, false);
-// 		}
-// 		audioAutoPlay();
-// 	});
-// 	//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
-// 	document.addEventListener('touchstart', function() {
-// 		function audioAutoPlay() {
-// 			music.play();
-// 		}
-// 		audioAutoPlay();
-// 	});
+	//android  ios 内部原因 为了节省流量，规定不自动播放音频视频
+	//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+	document.addEventListener('DOMContentLoaded', function() {
+		function audioAutoPlay() {
+			music.play();
+			document.addEventListener("WeixinJSBridgeReady", function() {
+				music.play();
+			}, false);
+		}
+		audioAutoPlay();
+	});
+	//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+	document.addEventListener('touchstart', function() {
+		function audioAutoPlay() {
+			music.play();
+		}
+		audioAutoPlay();
+	});
 	
-// 	//检测音乐加载完成
-// 	music.addEventListener('canplay',function(){
-// 		music.canplay = 1;
-// 	})
+	//检测音乐加载完成
+	music.addEventListener('canplay',function(){
+		music.canplay = 1;
+	})
 
 
-// 	var tiem = setInterval(function() {
+	var tiem = setInterval(function() {
 
-// 		num += 2;
-// 		loadingnum.innerHTML = num + "%";
+		num += 2;
+		loadingnum.innerHTML = num + "%";
 
-// 		if (num >= 60 && !music.canplay) {
-// 			num -= 1;
-// 		}
-// 		if (music.canplay && num>99) {
-// 			clearInterval(tiem);
-// 			// console.log(music.canplay);
+		if (num >= 60 && !music.canplay) {
+			num -= 1;
+		}
+		if (music.canplay && num>99) {
+			clearInterval(tiem);
+			// console.log(music.canplay);
 
-// 			loadingnum.innerHTML = "100%";
-// 			pageTop(index);
+			loadingnum.innerHTML = "100%";
+			pageTop(index);
 
-// 			music_div.style.display = "block";
+			music_div.style.display = "block";
 
-// 			girl();
-// 		}
+			girl();
+		}
 
 
-// 	}, 150);
+	}, 150);
 }
 
 
